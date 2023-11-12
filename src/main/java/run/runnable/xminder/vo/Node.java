@@ -1,4 +1,11 @@
-package com.diduweiwu.xminder.vo;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.vo;
 
 import java.util.List;
 

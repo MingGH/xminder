@@ -1,28 +1,28 @@
-package com.diduweiwu.xminder;
+package run.runnable.xminder;
 
 import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.core.util.RandomUtil;
-import com.diduweiwu.xminder.builder.SheetBuilder;
-import com.diduweiwu.xminder.builder.TopicBuilder;
-import com.diduweiwu.xminder.builder.XmindBuilder;
-import com.diduweiwu.xminder.constant.marker.MarkerFlag;
-import com.diduweiwu.xminder.parser.XmindParser;
-import com.diduweiwu.xminder.vo.Sheet;
-import com.diduweiwu.xminder.vo.Topic;
+import org.junit.jupiter.api.Test;
+import run.runnable.xminder.builder.SheetBuilder;
+import run.runnable.xminder.builder.TopicBuilder;
+import run.runnable.xminder.builder.XmindBuilder;
+import run.runnable.xminder.constant.marker.MarkerFlag;
+import run.runnable.xminder.parser.XmindParser;
+import run.runnable.xminder.vo.Sheet;
+import run.runnable.xminder.vo.Topic;
 import lombok.extern.slf4j.Slf4j;
-import org.testng.annotations.Test;
 
 import java.net.URL;
 import java.util.List;
 
 @Slf4j
-public class XmindParserTest {
+class XmindParserTest {
 
     /**
      * 解析xmind8 格式文件
      */
     @Test
-    public void testParseFile() {
+    void testParseFile() {
         URL filePath = ResourceUtil.getResource("file/xmind-8.xmind");
         Sheet firstSheet = XmindParser.parseFileForFirstSheet(filePath.getPath());
 
@@ -38,7 +38,7 @@ public class XmindParserTest {
      * 解析xmindzen 格式文件
      */
     @Test
-    public void testParseZenFile() {
+    void testParseZenFile() {
         URL filePath = ResourceUtil.getResource("file/xmind-8-to-zen.xmind");
         Sheet firstSheet = XmindParser.parseFileForFirstSheet(filePath.getPath());
 
@@ -51,7 +51,7 @@ public class XmindParserTest {
     }
 
     @Test
-    public void testCreateFile() {
+    void testCreateFile() {
         XmindBuilder builder = XmindBuilder.builder();
         SheetBuilder sheet = builder.createSheet("第一个");
         SheetBuilder sheet2 = builder.createSheet("第二个");

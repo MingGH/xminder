@@ -1,4 +1,11 @@
-package com.diduweiwu.xminder.parser;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.parser;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IoUtil;
@@ -10,11 +17,15 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import lombok.Builder;
 import lombok.Data;
 import lombok.SneakyThrows;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.Enumeration;
+import java.util.List;
 import java.util.stream.Collectors;
+import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
 /**
@@ -35,7 +46,7 @@ public class UnZipper {
          * @return
          */
         public boolean isZenVersion() {
-            return StrUtil.isNotBlank(this.contentJson);
+            return StringUtils.isNotBlank(this.contentJson);
         }
 
         /**

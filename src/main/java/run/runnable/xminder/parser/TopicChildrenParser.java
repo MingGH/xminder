@@ -1,15 +1,22 @@
-package com.diduweiwu.xminder.parser;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.parser;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.diduweiwu.xminder.vo.Topic;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.SneakyThrows;
+import run.runnable.xminder.vo.Topic;
 
 import java.util.Collection;
 import java.util.Collections;

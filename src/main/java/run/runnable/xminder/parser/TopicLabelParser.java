@@ -1,4 +1,11 @@
-package com.diduweiwu.xminder.parser;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.parser;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
@@ -8,6 +15,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Objects;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TopicLabelParser {

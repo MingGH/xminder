@@ -1,10 +1,17 @@
-package com.diduweiwu.xminder.vo;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.vo;
 
 import cn.hutool.core.collection.CollUtil;
-import com.diduweiwu.xminder.parser.TopicChildrenParser;
-import com.diduweiwu.xminder.parser.TopicExtensionParser;
-import com.diduweiwu.xminder.parser.TopicLabelParser;
-import com.diduweiwu.xminder.parser.TopicMarkerParser;
+import run.runnable.xminder.parser.TopicChildrenParser;
+import run.runnable.xminder.parser.TopicExtensionParser;
+import run.runnable.xminder.parser.TopicLabelParser;
+import run.runnable.xminder.parser.TopicMarkerParser;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -77,8 +84,8 @@ public class Topic implements Node {
     /**
      * 判断节点是否拥有某类标记节点
      *
-     * @param markerName
-     * @return
+     * @param markerName 标记名称
+     * @return boolean
      */
     public boolean hashMarker(String markerName) {
         return CollUtil.contains(this.getTopicMarkers(), markerName);

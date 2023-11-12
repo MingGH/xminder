@@ -1,4 +1,14 @@
-# Xmind解析与创建
+## 1. Project Overview: xminder (Modified Version)
+This is an enhanced version of the original repository [xminder](https://github.com/diduweiwu/xminder).
+In this modified edition, implemented a series of changes to adapt the project to new requirements and a modern technology stack.
+
+Here are the key modifications:
+- Java Version Upgrade: The project now utilizes Java 17, taking advantage of the latest language features and performance improvements.
+- Dependency Upgrades: Other related dependencies within the project have been updated to their latest stable versions. This ensures that the project is using the most recent and reliable libraries.
+- Add Project-Reactor: Project Reactor has been introduced to enable reactive programming capabilities. This addition provides a powerful framework for future project transformations.
+
+
+
 
 ## 概要介绍
 

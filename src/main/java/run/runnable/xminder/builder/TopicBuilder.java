@@ -1,10 +1,18 @@
-package com.diduweiwu.xminder.builder;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.builder;
 
 
 import cn.hutool.core.collection.CollUtil;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.apache.commons.collections4.CollectionUtils;
 import org.xmind.core.ITopic;
 import org.xmind.core.ITopicExtension;
 import org.xmind.core.IWorkbook;

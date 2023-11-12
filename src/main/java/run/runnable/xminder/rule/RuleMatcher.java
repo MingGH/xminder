@@ -1,8 +1,15 @@
-package com.diduweiwu.xminder.rule;
+/*
+ * Copyright (c) 2023 Asher
+ *
+ * Based on open-source software licensed under the MIT License.
+ * Original license information can be found in the LICENSE file.
+ * Original repository: https://github.com/diduweiwu/xminder
+ */
+package run.runnable.xminder.rule;
 
 import cn.hutool.core.collection.CollUtil;
-import com.diduweiwu.xminder.vo.Node;
-import com.diduweiwu.xminder.vo.Topic;
+import run.runnable.xminder.vo.Node;
+import run.runnable.xminder.vo.Topic;
 
 import java.util.List;
 
